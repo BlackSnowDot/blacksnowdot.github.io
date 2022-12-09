@@ -1,0 +1,18 @@
+html {
+    /*background-image: url("asset/anime.png");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    background-color: black;
+    color: white;
+    font-family: "Ink Free", sans-serif;
+}
+
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+#welcome {
+    color: #6efa3a;
+    padding-top: 2%;
+}
