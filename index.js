@@ -1,3 +1,5 @@
+
+is_playing = false
 function animator(id, text) {
     el = document.getElementById(id);
     let temptext = "";
@@ -29,18 +31,18 @@ function animateTitle(string) {
 }
 
 
-function better_op(id) {
-    let el = document.getElementById(id);
-    for (let i = 0; i < 100; i++) {
-        setTimeout(() => {
-            el.style.opacity = i / 100
-        }, i * 10)
-    }
-}
-
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     animateTitle("UwU")
     animator("welcome", "Welcome to My Page")
-    setTimeout(better_op("projects", 2000))
 })
 
+function choose(choices) {
+    var index = Math.floor(Math.random() * choices.length);
+    return choices[index];
+}
+
+function playAudio() {
+    let el1 = document.getElementById("sfw")
+    el1.src = choose(["s1.mp3", "s2.mp3", "s3.mp3"])
+    el1.play()
+}

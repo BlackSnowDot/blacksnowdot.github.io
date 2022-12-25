@@ -13,6 +13,22 @@ html {
 }
 
 #welcome {
-    color: #6efa3a;
+    color: #00d7b7;
     padding-top: 2%;
+}
+
+#playButton {
+    user-select: none;
+    position: relative;
+    width: 15%;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: #fffaff;
+    border: none;
+    background-image: linear-gradient(135deg, #00d7b7 0%, #007369 100%);
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 150ms ease;
 }
